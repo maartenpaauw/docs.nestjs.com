@@ -80,6 +80,7 @@ export class ApplicationModule {
 import { Module, NestModule, MiddlewaresConsumer, RequestMethod } from '@nestjs/common';
 import { LoggerMiddleware } from './common/middlewares/logger.middleware';
 import { CatsModule } from './cats/cats.module';
+import { CatsController } from './cats/cats.controller';
 
 @Module({
     imports: [CatsModule],
@@ -96,6 +97,7 @@ export class ApplicationModule implements NestModule {
 import { Module, RequestMethod } from '@nestjs/common';
 import { LoggerMiddleware } from './common/middlewares/logger.middleware';
 import { CatsModule } from './cats/cats.module';
+import { CatsController } from './cats/cats.controller';
 
 @Module({
     imports: [CatsModule],
